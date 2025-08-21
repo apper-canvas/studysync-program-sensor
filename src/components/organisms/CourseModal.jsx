@@ -16,8 +16,14 @@ const CourseModal = ({ isOpen, onClose, onSave, course }) => {
   const [errors, setErrors] = useState({});
 
   useEffect(() => {
-    if (course) {
-      setFormData({ ...course });
+if (course) {
+      setFormData({ 
+        name: course.name || "",
+        professor: course.professor || "",
+        credits: course.credits || 3,
+        semester: course.semester || "Fall 2024",
+        color: course.color || "#4F46E5"
+      });
     } else {
       setFormData({
         name: "",
