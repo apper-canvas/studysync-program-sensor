@@ -1,0 +1,98 @@
+[
+  {
+    "Id": 1,
+    "name": "Introduction to Psychology",
+    "professor": "Dr. Sarah Johnson",
+    "credits": 3,
+    "color": "#4F46E5",
+    "semester": "Fall 2024",
+    "currentGrade": 92.5,
+    "gradeCategories": [
+      { "name": "Homework", "weight": 0.25 },
+      { "name": "Quizzes", "weight": 0.25 },
+      { "name": "Midterm", "weight": 0.25 },
+      { "name": "Final", "weight": 0.25 }
+    ],
+    "schedule": [
+      { "day": "Monday", "time": "10:00 AM - 11:30 AM", "location": "PSY 101" },
+      { "day": "Wednesday", "time": "10:00 AM - 11:30 AM", "location": "PSY 101" },
+      { "day": "Friday", "time": "10:00 AM - 11:30 AM", "location": "PSY 101" }
+    ]
+  },
+  {
+    "Id": 2,
+    "name": "Calculus II",
+    "professor": "Prof. Michael Chen",
+    "credits": 4,
+    "color": "#8B5CF6",
+    "semester": "Fall 2024",
+    "currentGrade": 88.2,
+    "gradeCategories": [
+      { "name": "Homework", "weight": 0.2 },
+      { "name": "Quizzes", "weight": 0.3 },
+      { "name": "Midterm", "weight": 0.25 },
+      { "name": "Final", "weight": 0.25 }
+    ],
+    "schedule": [
+      { "day": "Tuesday", "time": "2:00 PM - 3:30 PM", "location": "MATH 205" },
+      { "day": "Thursday", "time": "2:00 PM - 3:30 PM", "location": "MATH 205" }
+    ]
+  },
+  {
+    "Id": 3,
+    "name": "World History",
+    "professor": "Dr. Emily Rodriguez",
+    "credits": 3,
+    "color": "#EC4899",
+    "semester": "Fall 2024",
+    "currentGrade": 95.1,
+    "gradeCategories": [
+      { "name": "Essays", "weight": 0.4 },
+      { "name": "Participation", "weight": 0.2 },
+      { "name": "Midterm", "weight": 0.2 },
+      { "name": "Final", "weight": 0.2 }
+    ],
+    "schedule": [
+      { "day": "Monday", "time": "1:00 PM - 2:30 PM", "location": "HIST 150" },
+      { "day": "Wednesday", "time": "1:00 PM - 2:30 PM", "location": "HIST 150" }
+    ]
+  },
+  {
+    "Id": 4,
+    "name": "Biology Lab",
+    "professor": "Dr. James Wilson",
+    "credits": 2,
+    "color": "#10B981",
+    "semester": "Fall 2024",
+    "currentGrade": 89.7,
+    "gradeCategories": [
+      { "name": "Lab Reports", "weight": 0.5 },
+      { "name": "Practical Exams", "weight": 0.3 },
+      { "name": "Final Project", "weight": 0.2 }
+    ],
+    "schedule": [
+      { "day": "Tuesday", "time": "3:00 PM - 5:00 PM", "location": "BIO LAB 3" },
+      { "day": "Thursday", "time": "3:00 PM - 5:00 PM", "location": "BIO LAB 3" }
+    ]
+  },
+  {
+    "Id": 5,
+    "name": "English Literature",
+    "professor": "Prof. Amanda Davis",
+    "credits": 3,
+    "color": "#F59E0B",
+    "semester": "Fall 2024",
+    "currentGrade": 91.3,
+    "gradeCategories": [
+      { "name": "Essays", "weight": 0.35 },
+      { "name": "Reading Quizzes", "weight": 0.25 },
+      { "name": "Midterm", "weight": 0.2 },
+      { "name": "Final", "weight": 0.2 }
+    ],
+    "schedule": [
+      { "day": "Monday", "time": "9:00 AM - 10:30 AM", "location": "ENG 120" },
+      { "day": "Wednesday", "time": "9:00 AM - 10:30 AM", "location": "ENG 120" },
+      { "day": "Friday", "time": "9:00 AM - 10:30 AM", "location": "ENG 120" }
+    ]
+  }
+]
