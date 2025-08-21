@@ -1,16 +1,17 @@
-import React, { useState, useEffect } from "react";
-import Card from "@/components/atoms/Card";
-import Button from "@/components/atoms/Button";
-import Badge from "@/components/atoms/Badge";
-import Loading from "@/components/ui/Loading";
-import Error from "@/components/ui/Error";
-import Empty from "@/components/ui/Empty";
-import ApperIcon from "@/components/ApperIcon";
+import React, { useEffect, useState } from "react";
 import { coursesService } from "@/services/api/coursesService";
 import { assignmentsService } from "@/services/api/assignmentsService";
-import { calculateGPA, calculateCourseGrade, getLetterGrade, formatGPA } from "@/utils/grading";
 import { toast } from "react-toastify";
-
+import ApperIcon from "@/components/ApperIcon";
+import Courses from "@/components/pages/Courses";
+import Error from "@/components/ui/Error";
+import Empty from "@/components/ui/Empty";
+import Loading from "@/components/ui/Loading";
+import Button from "@/components/atoms/Button";
+import Card from "@/components/atoms/Card";
+import Badge from "@/components/atoms/Badge";
+import Select from "@/components/atoms/Select";
+import { calculateCourseGrade, calculateGPA, formatGPA, getLetterGrade } from "@/utils/grading";
 const Grades = () => {
   const [courses, setCourses] = useState([]);
   const [assignments, setAssignments] = useState([]);
@@ -158,14 +159,14 @@ const Grades = () => {
                   >
                     <div className="flex items-center justify-between">
                       <div className="flex items-center gap-4">
-                        <div
+<div
                           className="w-4 h-4 rounded-full"
                           style={{ backgroundColor: course.color }}
                         />
                         <div>
-                          <h3 className="font-medium text-gray-900">{course.name}</h3>
+                          <h3 className="font-medium text-gray-900">{course.Name}</h3>
                           <p className="text-sm text-gray-600">
-                            {course.professor} • {course.credits} credits
+                            {course.professor_c} • {course.credits_c} credits
                           </p>
                         </div>
                       </div>
@@ -202,9 +203,9 @@ const Grades = () => {
 
         {/* Course Details */}
         <div>
-          <Card className="p-6">
+<Card className="p-6">
             <h3 className="text-lg font-display font-semibold text-gray-900 mb-4">
-              {selectedCourse ? selectedCourse.name : "Select a Course"}
+              {selectedCourse ? selectedCourse.Name : "Select a Course"}
             </h3>
 
             {selectedCourse ? (
@@ -214,11 +215,11 @@ const Grades = () => {
                   <div className="grid grid-cols-2 gap-4 text-sm">
                     <div>
                       <span className="text-gray-600">Professor:</span>
-                      <div className="font-medium">{selectedCourse.professor}</div>
+                      <div className="font-medium">{selectedCourse.professor_c}</div>
                     </div>
                     <div>
                       <span className="text-gray-600">Credits:</span>
-                      <div className="font-medium">{selectedCourse.credits}</div>
+                      <div className="font-medium">{selectedCourse.credits_c}</div>
                     </div>
                     <div>
                       <span className="text-gray-600">Current Grade:</span>
@@ -227,11 +228,11 @@ const Grades = () => {
                           ? `${selectedCourse.currentGrade.toFixed(1)}% (${selectedCourse.letterGrade})`
                           : "No grades yet"
                         }
-                      </div>
+</div>
                     </div>
                     <div>
                       <span className="text-gray-600">Semester:</span>
-                      <div className="font-medium">{selectedCourse.semester}</div>
+                      <div className="font-medium">{selectedCourse.semester_c}</div>
                     </div>
                   </div>
                 </div>
